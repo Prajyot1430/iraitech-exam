@@ -32,7 +32,30 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.gridBox {
+  display: grid;
+  grid-template-columns: auto auto;
+  /* grid has two columns; content defines width */
+  justify-content: space-between;
+  /* horizontal alignment of grid tracks */
+  align-content: space-between;
+  /* vertical alignment of grid tracks */
+  height: 300px;
+  background-color: lightgray;
+  border: 1px solid black;
+}
+
+.gridBox>div {
+  background-color: yellow;
+}
+
+.center-block {
+  margin: auto;
+  display: block;
 }

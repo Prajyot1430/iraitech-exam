@@ -1,24 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import MissingNumber from './Component/MissingNumber';
+import PhoneBook from './Component/PhoneBook';
+import HomeModule from './Component/HomeModule';
+import DynamicComponents from './Component/DynamicComponents';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h2>Prajyot Rajpure - IRAITECH EXAM</h2>
+      <MissingNumber />
+      <DynamicComponents />
+      <PhoneBook />
+      <HomeModule />
+    </>
   );
 }
 
